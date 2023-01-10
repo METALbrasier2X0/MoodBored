@@ -1,0 +1,94 @@
+// Global stylesheet
+
+$primary-color: #c6538c;
+$secondary-color: #26c5b0;
+$tertiary-color: #a02ebd;
+$background-color:#013c63;
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: 100vh;
+}
+
+// Navbar stylesheet
+
+.navbar{
+display: flex;
+justify-content: start;
+flex-direction: column;
+align-items: center;
+background-color: $background-color;
+height: 100%;   
+
+    & .navbar__bubbles{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    & .navbar__bubbles__element{
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        background-color: $tertiary-color; border-radius: 50px;
+        border: rgba(190, 190, 190, 0.3) 5px solid ;
+    }
+
+    & .navbar__bubbles__home{ 
+        margin: 30px 10px 20px 10px;
+        background-color: $tertiary-color; border-radius: 50px;
+    }
+
+    & .navbar__bubbles__board{ 
+        background-color: $primary-color; border-radius: 50px;
+    }
+
+    & .navbar__bubbles__search{ 
+        background-color: $secondary-color; border-radius: 50px;
+    }
+    }
+
+
+    & .navbar__account{
+        padding: 30px 0px 10px 0px;
+        z-index: 9999999;
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+        background-color: $background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: rgba(190, 190, 190, 0.3) 2px solid;
+        
+
+        & .navbar__account__element { 
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            background-color: $secondary-color; border-radius: 50px;
+        }
+
+        & .navbar__account__profile { 
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: $secondary-color; border-radius: 50px;
+        }
+    }
+
+}
+
+// Main content stylesheet
+
+.main-content{
+
+
+}
